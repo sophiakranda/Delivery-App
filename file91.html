@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Favorite Food Delivery Partner</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.1.2/collection/components/icon/icon.min.css" integrity="sha512-hauda6NeibaMNqxY3e7YDWWgP6cXKVAeaG/H26S5mvR0IFubczGFSNQCF9LEip/+Kt7Asuv1hYbrTGovJ+Qv9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/animations.min.css" integrity="sha512-GKHaATMc7acW6/GDGVyBhKV3rST+5rMjokVip0uTikmZHhdqFWC7fGBaq6+lf+DOS5BIO8eK6NcyBYUBCHUBXA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="file91.css">
 </head>
-    
+    <body>
     <div class="container-fluid px-0 mb-5 p-4">
             <nav class="navbar navbar-expand-sm">
                 <div class="container">
-                  <a class="navbar-brand" href="javascript:void(0)">🍕</a>
+                  <a class="navbar-brand logol" href="javascript:void(0)">🍕</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -44,6 +42,10 @@
                   </div>
                 </div>
               </nav>
+              <div class="circle mx-5" id="circle"></div>
+              <div class="d-flex justify-content-end">
+                <div class="square mt-2 mx-5" id="square"></div>
+            </div>
         </div>
         <!--navigation bar has ended-->
 
@@ -67,17 +69,22 @@
                     <div class="row">
                         <div class="col-md-10">
                             <div class="my-5">
-                                <img src="unnamed.png">
-                                <img src="name.png">
+                                <img src="unnamed.png" class="download-icon">
+                                <img src="name.png" class="download-icon" style="margin-left:10px;">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="man-container d-flex justify-content-center align-items-center">
-                        <img src="redman.png">
+                        <img src="redman.png" class="delivery-image">
                     </div>
                 </div>
+                <div class="d-flex justify-content-end">
+                    <div class="circle mt-3" id="circle"></div>
+                </div>
+                <div class="square" id="square"></div>
+
             </div>
             <!--the end of the row but never the show-->
             <div class="row mt-5">
@@ -108,7 +115,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 mt-3 mt-md-0">
                             <div class="card bg-light border-0 rounded-4 card-height">
                                 <div class="card-body d-flex justify-content-center">
                                     <div>
@@ -120,7 +127,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 mt-3 mt-md-0">
                             <div class="card bg-light border-0 rounded-4 card-height">
                                 <div class="card-body d-flex justify-content-center">
                                     <div>
@@ -132,7 +139,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-5 mt-3 mt-md-0">
                             <div class="card bg-light border-0 rounded-4 py-4 card-height">
                                 <div class="card-body">
                                     <div class="row">
@@ -150,11 +157,343 @@
                 </div>
             </div>
             <!--the end of the row but not the show~-->
+            <div class="row mt-5">
+  
+                <i class='bx bxs-quote-right fs-1'></i>
+
+                <div class="col-md-6 d-none d-md-block">
+                    <div class="row" id="pasta-desc">
+                        <div class="col-md-10">
+                            <p class="order-p">“pasta ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                ut labore et dolore magna aliqua.”</p>
+                        </div>
+                    </div>
+                    
+                  <div class="row" id="salad-desc" style="display:none;">
+                        <div class="col-md-10">
+                            <p class="order-p">“salad dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                ut labore et dolore magna aliqua.”</p>
+                        </div>
+                    </div>
+    
+                    <div class="row" id="desserts-desc" style="display:none;">
+                        <div class="col-md-10">
+                            <p class="order-p">“desserts sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                ut labore et dolore magna aliqua.”</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+            <div class="col-md-6 mx-0">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-md-4">
+                        <p class="order-p d-md-none">“pasta ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                            ut labore et dolore magna aliqua.”</p>
+                        <div class="card ch border-0 rounded-4 py-4 cardStyle" id="pasta-card">
+                            <div class="card-body d-flex justify-content-center">
+                                <div>
+                                    <div class="d-flex justify-content-center align-items-center dishes-container rounded-circle">
+                                        <span class="fs-1">🍝</span> 
+                                    </div>
+                                    <p class="dish-p-2 mt-4">Pasta</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="order-p d-md-none">“pasta ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                            ut labore et dolore magna aliqua.”</p>
+                        <div class="card ch border-0 rounded-4 py-4" id="salad-card">
+                            <div class="card-body d-flex justify-content-center">
+                                <div>
+                                    <div class="d-flex justify-content-center align-items-center dishes-container rounded-circle">
+                                        <span class="fs-1">🥗</span> 
+                                    </div>
+                                    <p class="dish-p-2 mt-4">Salad</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="order-p d-md-none">“desserts sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                            ut labore et dolore magna aliqua.”</p>
+                        <div class="card ch border-0 rounded-4 py-4" id="desserts-card">
+                            <div class="card-body d-flex justify-content-center">
+                                <div>
+                                    <div class="d-flex justify-content-center align-items-center dishes-container rounded-circle">
+                                        <span class="fs-1">🍰</span> 
+                                    </div>
+                                    <p class="dish-p-2 mt-4">Dessert</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
         </div>
+        <!--the end of this row, but there plenty of moe~-->
+        <div class="row mt-5">
+            <div class="d-flex justify-content-center mt-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <h2 class="text-center" style="color: #2E2C49;">How To Order?</h2>
+                        <div class="row mt-4 d-flex mx-4" style="margin-bottom: 250px;">
+                            <div class="col-md-3 mt-3 mt-md-0">
+                                <p class="fs-2 fw-bold text-center text-md-start" style="color:#FF5331">01</p>
+                                <div class="card orderi bg-light border-0 rounded-4 py-1">
+                                    <div class="card-body d-flex justify-content-center">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-center">
+                                                    <div class="d-flex justify-content-center align-items-center dishes-container rounded-4">
+                                                        <span class="fs-3">📍</span>
+                                                    </div>
+                                                </div>
+                                                <p class="dish-p-2 mt-5">Choose your location</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+            
+                            <div class="col-md-3 mt-3 mt-md-0">
+                                <p class="fs-2 fw-bold text-center text-md-start" style="color:#FF5331">02</p>
+                                <div class="card orderi bg-light border-0 rounded-4 py-1">
+                                    <div class="card-body d-flex justify-content-center">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-center">
+                                                    <div class="d-flex justify-content-center align-items-center dishes-container rounded-4">
+                                                        <span class="fs-3">🙇🏻‍♂️</span>
+                                                    </div>
+                                                </div>
+                                                <p class="dish-p-2 mt-5">Choose what to eat</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+            
+                            <div class="col-md-3 mt-3 mt-md-0">
+                                <p class="fs-2 fw-bold text-center text-md-start" style="color:#FF5331">03</p>
+                                <div class="card orderi bg-light border-0 rounded-4 py-1">
+                                    <div class="card-body d-flex justify-content-center">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-center">
+                                                    <div class="d-flex justify-content-center align-items-center dishes-container rounded-4">
+                                                        <span class="fs-3">🍔</span>
+                                                    </div>
+                                                </div>
+                                                <p class="dish-p-2 mt-5">May your first order</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+            
+                            <div class="col-md-3 mt-3 mt-md-0">
+                                <p class="fs-2 fw-bold text-center text-md-start" style="color:#FF5331">04</p>
+                                <div class="card orderi bg-light border-0 rounded-4 py-1">
+                                    <div class="card-body d-flex justify-content-center">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-center">
+                                                    <div class="d-flex justify-content-center align-items-center dishes-container rounded-4">
+                                                        <span class="fs-3">🏠</span>
+                                                    </div>
+                                                </div>
+                                                <p class="dish-p-2 mt-5">Now! Your food in way</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--the end of this row, but i've more to show~-->
+        <div class="row">
+            <div class="container-fluid">
+                <div class="container" style="margin-bottom: 250px;">
+                    <div class="mt" id="test">
+                        <div class="d-flex justify-content-center text-center">
+                            <div class="">
+                                <h3 class="fs-1 ">Our Clients Feedback</h3>
+                                <div id="demo" class="carousel slide" data-bs-ride="carousel">
         
+                                    <!-- Indicators/dots -->
+                                    <div class="carousel-indicators">
+                                      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                                      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                                      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                                    </div>
+                                    
+                                    <!-- The slideshow/carousel -->
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                            <div class="mt-4 text-center" id="">
+                                                    <p>The food at your doorstep. Why starve when you have us. You hunger <br> partner. 
+                                                        Straight out of the oven to your doorstep.</p> 
+                                                        <box-icon type='solid' name='quote-left' size="lg" color="#FF5331"></box-icon>       
+                                                        <div class="">
+                                                            <p>“There is supposed to be some long text here, but i don't have a lot to type, so ... yeah,
+                                                                this should be sliding by now. But yeah, this website is good, and you should try it out i guess”</p>
+                                                                <span class="fw-semibold">Michael Kranda</span>
+                                                                <br>
+                                                                <p class="">Not the CEO</p>
+                                                        </div>
+                                          </div>    </div>
+                                            <div class="carousel-item">
+                                            <div class="mt-4 text-center" id="">
+                                                    <p>The food at your doorstep. Why starve when you have us. You hunger <br> partner. 
+                                                        Straight out of the oven to your doorstep.</p> 
+                                                        <box-icon type='solid' name='quote-left' size="lg" color="#FF5331"></box-icon>       
+                                                        <div class="">
+                                                            <p>“somebody forced me to this fr fr, like u should try it i guess, because it was worth my time 
+                                                            getting food i could've gotten from a Fast Food Resurant delivered to me in like a minute”</p>
+                                                                <span class="fw-semibold">Sophia Kranda</span>
+                                                                <br>
+                                                                <p class="">A satisfied customer</p>
+                                                        </div>
+                                        </div>    </div>
+                                            <div class="carousel-item">
+                                                <div class="mt-4 text-center" id="">
+                                                    <p>The food at your doorstep. Why starve when you have us. You hunger <br> partner. 
+                                                        Straight out of the oven to your doorstep.</p> 
+                                                        <box-icon type='solid' name='quote-left' size="lg" color="#FF5331"></box-icon>       
+                                                        <div class="">
+                                                            <p>“bro, there is already door dash, Uber Eats and Jumia Food. I was hungry 
+                                                              and found out about this new company, and they were paying you if you talked 
+                                                              good about the company, and they already payed me, so you know what im doing
+                                                              now huh. Firstly, this isn't good food. Secondly, the driver ate ALL of my food before even bringing 
+                                                              it to me, can u imagine?!?!? (this actually happened)”</p>
+                                                                <span class="fw-semibold">The angry one</span>
+                                                                <br>
+                                                                <p class="">An unsatisfied customer</p>
+                                                        </div>
+                                        </div>    </div>
+                                    </div>
+                                    
+                                    <!-- Left and right controls/icons -->
+                                    <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next bg-dark" type="button" data-bs-target="#demo" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!--the end of a row, next one is below-->
+        <div class="container-fluid py-5" style="background-color: #FFEFEC;"> 
+            <div class="container">
+                <div class="pt-1 d-flex align-items-center">
+                    <div class="">
+                            <div class="row pb-4">
+                                <div class="col-md-6">
+                                    <h3 class="fw-bold">Subscribe to our newsletter</h3>
+                                    <p>Browse local restaurants and businesses for delivery by entering your address blow.</p>
+                                </div>
+                                <div class="col-md-6">          
+                                    <div class="d-flex p-2 bg-light rounded-5">
+                                        <input type="text" class="form-control rounded-5 border-0 order-input" placeholder="Enter your delivery location">
+                                        <span class="input-group-text rounded-5 signup-btn btn" id="basic-addon1">Order now</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </row>
+        </div>
+        </div>
+        <!--the end of a row, theres some more low-->
+        <div class="container-fluid" style="background-color: black;">
+            <div class="container">
+                <div class="row">
+                <footer class="py-5">
+                    <div class="row">  
+                      <div class="col-md-5">
+                        <form>
+                            <div class="row mb-5">
+                                <h2 class="text-white mt-5 fs-3">🍕</h2>
+                            </div>
+                          <div class="row my-5">
+                                    <img src="unnamed.png" class="download-icon">
+                                    <img src="name.png" class="download-icon">
+                        </div>
+                        </form>
+                      </div>
+                      <div class="col-md-7">
+                        <div class="row mt-5">
+                            <div class="col-6 col-md-3 mb-3">
+                                <h5 class="text-white">Section</h5>
+                                <ul class="nav flex-column">
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Home</a></li>
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Features</a></li>
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Pricing</a></li>
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">FAQs</a></li>
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">About</a></li>
+                                </ul>
+                              </div>
+                        
+                              <div class="col-6 col-md-3 mb-3">
+                                <h5 class="text-white">Section</h5>
+                                <ul class="nav flex-column">
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Home</a></li>
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Features</a></li>
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Pricing</a></li>
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">FAQs</a></li>
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">About</a></li>
+                                </ul>
+                              </div>
+                        
+                              <div class="col-6 col-md-3 mb-3">
+                                <h5 class="text-white">Section</h5>
+                                <ul class="nav flex-column">
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Home</a></li>
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Features</a></li>
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Pricing</a></li>
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">FAQs</a></li>
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">About</a></li>
+                                </ul>
+                              </div>
+
+                              <div class="col-6 col-md-3 mb-3">
+                                <h5 class="text-white">Section</h5>
+                                <ul class="nav flex-column">
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Home</a></li>
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Features</a></li>
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Pricing</a></li>
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">FAQs</a></li>
+                                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">About</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 text-secondary">
+                      <p class="mt-5">&copy; 2022 pizza, Inc. All rights reserved.</p>
+                      <ul class="list-unstyled d-flex mt-5 mx-5">
+                        <li class="ms-3"><a class="text-secondary text-decoration-none" href="#">Privacy</a></li>
+                        <li class="ms-3"><a class="text-secondary text-decoration-none" href="#">Policy</a></li>
+                        <li class="ms-3"><a class="text-secondary text-decoration-none" href="#">Terms</a></li>
+                        <li class="ms-3"><a class="text-secondary text-decoration-none" href="#">Services</a></li> 
+                      </ul>
+                    </div>
+                  </footer>
+                  </div>
+            </div>
+        </div>
+        <!--the end of the row and the show, theres no more so you may go!-->
+        <script src="jquery.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.1.2/collection/components/icon/icon.min.css" integrity="sha512-hauda6NeibaMNqxY3e7YDWWgP6cXKVAeaG/H26S5mvR0IFubczGFSNQCF9LEip/+Kt7Asuv1hYbrTGovJ+Qv9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="file91.js">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.min.js" integrity="sha512-y8/3lysXD6CUJkBj4RZM7o9U0t35voPBOSRHLvlUZ2zmU+NLQhezEpe/pMeFxfpRJY7RmlTv67DYhphyiyxBRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="file91.js"></script>
 </body>
 </html>

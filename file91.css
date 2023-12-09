@@ -71,21 +71,119 @@
 .dishes-container{
     width: 108px;
     height: 108px;
-    flex-shrink: 0;
     background-color:#FFF;
 }
 
 .dish-p-2{
     color: #191720;
     text-align: center;
-    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px; /* 100% */
-    letter-spacing: -0.24px;
+    line-height: 30px; /* 125% */
 }
 
 .card-height{
-    height: 220px;
+    height: 250px;
+}
+
+.emojo{
+    color: #191720;
+    text-align: center;
+    font-family: Inter;
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 58.75px; /* 125% */
+}
+
+.orderi{
+    width: 214px;
+    height: 303px;
+}
+
+.dish-p-2{
+    color: #191720;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 125% */
+}
+
+.arrowb{
+    width: 96px;
+    height: 36px;
+    flex-shrink: 0;     
+}
+
+/* .subscribe{
+    display: flex;
+    width: 1190px;
+    padding:80px;;
+} */
+
+.cardStyle {
+    background-color:rgb(108, 41, 62) !important;
+}
+
+.liste{
+    color:rgb(255, 255, 255);
+}
+
+.download-icon{
+    width:auto;
+    height: 40px;
+}
+
+@media only screen and (max-width: 600px){
+    .intro-head{
+        font-size: 36px;
+        line-height: 30px;
+    }
+    .man-container{
+        width: auto;
+        height: 300px;
+        position: relative;
+    }
+    .delivery-image{
+        position:absolute;
+        width: auto;
+        height:280px;
+    }
+    .dish-head{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .card-height{
+        height: 270px;
+    }
+
+}
+.circle{
+    background-color: rgb(238, 232, 191);
+    height:70px;
+    width:70px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle2{
+    background-color: rgb(238, 232, 191);
+    height:70px;
+    width:70px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.square{
+    height:70px;
+    width:70px;
+    background-color: rgb(56, 21, 21);
+}
+
+.square2{
+    height:70px;
+    width:70px;
+    background-color: rgb(56, 21, 21);
 }
